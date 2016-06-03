@@ -1,26 +1,202 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
     <meta charset="utf-8">
-    <title>My test page</title>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <h1>Mozilla is cool</h1>
-    <img src="images/firefox-icon.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Introduction of myself </title>
+        <!--REQUIRED STYLE SHEETS-->
+    <!--MAIN BOOTSTRAP STYLE-->
+    <link href="assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <!--FONT AWESOME STYLE -->
+    <link href="assets/plugins/font-awesome/font-awesome.min.css" rel="stylesheet" />
+         <!--CUSTOM STYLE -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!--END REQUIRED STYLE SHEETS-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- LEFT MENU SECTION -->
+    <section class="left-panel">
+        <nav class="navigatation">
+            <div class="menu-text">
+                <h3><i class="fa fa-flask main-color"></i> HyoukaNa </h3>
+            </div>
+            <a href="#home-section">Home</a>
+            <a href="#subscribe-section">Subscribe</a>
+            <a href="https://github.com/HyoukaNa/HyoukaNa.github.io">Github</a>
+			<a href="http://www.hust.edu.cn/">HUST</a>
+			<a href="http://sse.hust.edu.cn/hustsoft/home.action">HustSoft</a>
+        </nav>
+        <!-- ./Navigation links-->
+        <div id="social-links" class="Icon-trigger">
+            <span class="fa fa-bars"></span>
+            
+        </div>
+        <!-- ./Social links-->
+        <!-- ./Social links-->
+    </section>
+    <!--END LEFT MENU SECTION -->
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+        <!-- HOME SECION -->
+        <section id="home-section" >
+            <div class="row">
+			
+			
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+                <img class="img-circle" src="assets/img/lhq.jpg">
+                <h3><strong> 梁惠青 </strong></h3>
+               <h4>Personal blog</h4>
+                 <p style="padding-left:40px;padding-right:40px;">
+                    学号：U201417260
+					<br>
+					班级：软工1405班
+					<br>
+					专业：华中科技大学
+                </p>
+            </div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" >
+                 <h1>FAST     <i class="fa fa-flask main-color fa-spin"></i> PREVIEW  </h1>
+               <br>
+                <p>
+                     如你所见，我是一名来自华中科技大学软件专业的学生。                          <br>
+					 As you see,I'm a student from the software college of HUST.                    
+                </p>
+				 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                       
+                        <div id="counter"></div>
+                        <div id="counter-default" class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <div class="inner">
+                                    <div id="day-number" class="timer-number"></div>
+                                    <div class="timer-text">DAYS</div>
+                                    <div class="progress medium  active">
+                                        <div id="day-bar" class="progress-bar bk-blue"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <div class="inner">
+                                    <div id="hour-number" class="timer-number"></div>
+                                    <div class="timer-text">HOURS</div>
+                                    <div class="progress medium  active">
+                                        <div id="hour-bar" class="progress-bar bk-green"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <div class="inner">
+                                    <div id="minute-number" class="timer-number"></div>
+                                    <div class="timer-text">MINUTES</div>
+                                    <div class="progress medium  active">
+                                        <div id="minute-bar" class="progress-bar bk-pink"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <div class="inner">
+                                    <div id="second-number" class="timer-number"></div>
+                                    <div class="timer-text">SECOND</div>
 
-    <p>At Mozilla, we’re a global community of</p>
-    
-    <ul> <!-- changed to list in the tutorial -->
-      <li>technologists</li>
-      <li>thinkers</li>
-      <li>builders</li>
-    </ul>
+                                    <div class="progress medium  active">
+                                        <div id="second-bar" class="progress-bar bk-red"></div>
+                                    </div>
 
-    <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./Counter -->
 
-    <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> to learn even more about the values and principles that guide the pursuit of our mission.</p>
-	<script src="scripts/main.js"></script>
-  </body>
+
+                    </div>
+                </div>
+            </div>
+			
+			
+			
+			
+               
+            </div>
+            <!--./row-->
+        </section>
+        <!-- END HOME SECION -->
+        
+        <!-- SUBSCRIBE SECION -->
+        <section id="subscribe-section">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    
+                    <h1 class="center">SUBSCRIBE <i class="fa fa-flask"></i> ME NOW</h2>
+                    <div class="divider-two margin-botom-50"></div>
+                    <!-- ./Headings -->
+                    <p class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12 center">
+                        你可以在这里输入你的邮箱来订阅我的博客。<br>
+						（此订阅功能正在开发中，暂时无法使用。）
+						<br>
+						Waiting....                    
+                    </p>
+                    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12 center">
+                        <p class="set-sb ">
+
+                            <input class="form-control font-30 input-set" type="text" placeholder="Enter Your Email">
+                            <br />
+                            <input type="button" onclick=alert("Waiting ...") class="btn btn-success font-30" value="SUBSCRIBE NOW"  />
+                        </p>
+                        <p>
+                            <strong>Subscribe:</strong>
+							<br>More Internet Technologies Informations.
+							<br>More Studies About OS.
+							<br>Some Evalations About VideoGames And Films.
+							
+						</p>
+                    </div>
+                </div>
+            </div>
+            <!--./row-->
+        </section>
+        <!-- END SUBSCRIBE SECION -->
+        <!-- FOOTER SECION -->
+        <section id="footer">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    &copy; hyoukana.github.io 2016/06 | Display on human–computer interaction class
+                </div>
+            </div>
+            <!--./row-->
+        </section>
+        <!--END FOOTER SECION -->
+    </div>
+    <!-- END MAIN CONTAINER -->
+    <!--REQUIRED SCRIPTS FILES-->  <!--SCRIPTS AT END SO PAGE WILL TAKE LESS TIME TO LOAD-->
+    <!--REQUIRED CORE JQUERY SCRIPTS FILE--> 
+    <script src="assets/plugins/jquery.min.js"></script>
+     <!--REQUIRED BOOTSTRAP SCRIPTS FILE-->
+    <script src="assets/plugins/bootstrap/bootstrap.js"></script>
+   <!--REQUIRED SCRIPT FILES FOR JQUERY COUNTDOWN-->
+    <script src="assets/plugins/countdown/jquery.countdown.js"></script>
+    <script src="assets/js/countdown.js"></script>
+     <!--REQUIRED SCRIPT FOR SCROLLING MENU LINKS--> 
+     <script src="assets/plugins/jquery.easing.1.3.js"></script>
+        <!--REQUIRED CUSTOM SCRIPT FILE-->    
+    <script src="assets/js/custom-color.js"></script>
+      <!--END REQUIRED SCRIPTS FILES-->
+</body>
+
+
 </html>
