@@ -1,202 +1,378 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en">
-<!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!--[if IE]>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <![endif]-->
-    <title>Introduction of myself </title>
-        <!--REQUIRED STYLE SHEETS-->
-    <!--MAIN BOOTSTRAP STYLE-->
-    <link href="assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <!--FONT AWESOME STYLE -->
-    <link href="assets/plugins/font-awesome/font-awesome.min.css" rel="stylesheet" />
-         <!--CUSTOM STYLE -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <!--END REQUIRED STYLE SHEETS-->
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
-    <!-- LEFT MENU SECTION -->
-    <section class="left-panel">
-        <nav class="navigatation">
-            <div class="menu-text">
-                <h3><i class="fa fa-flask main-color"></i> HyoukaNa </h3>
-            </div>
-            <a href="#home-section">Home</a>
-            <a href="#subscribe-section">Subscribe</a>
-            <a href="https://github.com/HyoukaNa/HyoukaNa.github.io">Github</a>
-			<a href="http://www.hust.edu.cn/">HUST</a>
-			<a href="http://sse.hust.edu.cn/hustsoft/home.action">HustSoft</a>
-        </nav>
-        <!-- ./Navigation links-->
-        <div id="social-links" class="Icon-trigger">
-            <span class="fa fa-bars"></span>
-            
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <!--
+    Modified from the Debian original for Ubuntu
+    Last updated: 2014-03-19
+    See: https://launchpad.net/bugs/1288690
+  -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Apache2 Ubuntu Default Page: It works</title>
+    <style type="text/css" media="screen">
+  * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  body, html {
+    padding: 3px 3px 3px 3px;
+
+    background-color: #D8DBE2;
+
+    font-family: Verdana, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+  }
+
+  div.main_page {
+    position: relative;
+    display: table;
+
+    width: 800px;
+
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+
+    border-width: 2px;
+    border-color: #212738;
+    border-style: solid;
+
+    background-color: #FFFFFF;
+
+    text-align: center;
+  }
+
+  div.page_header {
+    height: 99px;
+    width: 100%;
+
+    background-color: #F5F6F7;
+  }
+
+  div.page_header span {
+    margin: 15px 0px 0px 50px;
+
+    font-size: 180%;
+    font-weight: bold;
+  }
+
+  div.page_header img {
+    margin: 3px 0px 0px 40px;
+
+    border: 0px 0px 0px;
+  }
+
+  div.table_of_contents {
+    clear: left;
+
+    min-width: 200px;
+
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.table_of_contents_item {
+    clear: left;
+
+    width: 100%;
+
+    margin: 4px 0px 0px 0px;
+
+    background-color: #FFFFFF;
+
+    color: #000000;
+    text-align: left;
+  }
+
+  div.table_of_contents_item a {
+    margin: 6px 0px 0px 6px;
+  }
+
+  div.content_section {
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.content_section_text {
+    padding: 4px 8px 4px 8px;
+
+    color: #000000;
+    font-size: 100%;
+  }
+
+  div.content_section_text pre {
+    margin: 8px 0px 8px 0px;
+    padding: 8px 8px 8px 8px;
+
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #000000;
+
+    background-color: #F5F6F7;
+
+    font-style: italic;
+  }
+
+  div.content_section_text p {
+    margin-bottom: 6px;
+  }
+
+  div.content_section_text ul, div.content_section_text li {
+    padding: 4px 8px 4px 16px;
+  }
+
+  div.section_header {
+    padding: 3px 6px 3px 6px;
+
+    background-color: #8E9CB2;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+  }
+
+  div.section_header_red {
+    background-color: #CD214F;
+  }
+
+  div.section_header_grey {
+    background-color: #9F9386;
+  }
+
+  .floating_element {
+    position: relative;
+    float: left;
+  }
+
+  div.table_of_contents_item a,
+  div.content_section_text a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  div.table_of_contents_item a:link,
+  div.table_of_contents_item a:visited,
+  div.table_of_contents_item a:active {
+    color: #000000;
+  }
+
+  div.table_of_contents_item a:hover {
+    background-color: #000000;
+
+    color: #FFFFFF;
+  }
+
+  div.content_section_text a:link,
+  div.content_section_text a:visited,
+   div.content_section_text a:active {
+    background-color: #DCDFE6;
+
+    color: #000000;
+  }
+
+  div.content_section_text a:hover {
+    background-color: #000000;
+
+    color: #DCDFE6;
+  }
+
+  div.validator {
+  }
+    </style>
+  </head>
+  <body>
+    <div class="main_page">
+      <div class="page_header floating_element">
+        <img src="/icons/ubuntu-logo.png" alt="Ubuntu Logo" class="floating_element"/>
+        <span class="floating_element">
+          Apache2 Ubuntu Default Page
+        </span>
+      </div>
+<!--      <div class="table_of_contents floating_element">
+        <div class="section_header section_header_grey">
+          TABLE OF CONTENTS
         </div>
-        <!-- ./Social links-->
-        <!-- ./Social links-->
-    </section>
-    <!--END LEFT MENU SECTION -->
-    <!-- MAIN CONTAINER -->
-    <div class="container">
-        <!-- HOME SECION -->
-        <section id="home-section" >
-            <div class="row">
-			
-			
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
-                <img class="img-circle" src="assets/img/lhq.jpg">
-                <h3><strong> 梁惠青 </strong></h3>
-               <h4>Personal blog</h4>
-                 <p style="padding-left:40px;padding-right:40px;">
-                    学号：U201417260
-					<br>
-					班级：软工1405班
-					<br>
-					专业：华中科技大学
-                </p>
-            </div>
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" >
-                 <h1>FAST     <i class="fa fa-flask main-color fa-spin"></i> PREVIEW  </h1>
-               <br>
-                <p>
-                     如你所见，我是一名来自华中科技大学软件专业的学生。                          <br>
-					 As you see,I'm a student from the software college of HUST.                    
-                </p>
-				 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                       
-                        <div id="counter"></div>
-                        <div id="counter-default" class="row">
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                                <div class="inner">
-                                    <div id="day-number" class="timer-number"></div>
-                                    <div class="timer-text">DAYS</div>
-                                    <div class="progress medium  active">
-                                        <div id="day-bar" class="progress-bar bk-blue"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                                <div class="inner">
-                                    <div id="hour-number" class="timer-number"></div>
-                                    <div class="timer-text">HOURS</div>
-                                    <div class="progress medium  active">
-                                        <div id="hour-bar" class="progress-bar bk-green"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                                <div class="inner">
-                                    <div id="minute-number" class="timer-number"></div>
-                                    <div class="timer-text">MINUTES</div>
-                                    <div class="progress medium  active">
-                                        <div id="minute-bar" class="progress-bar bk-pink"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                                <div class="inner">
-                                    <div id="second-number" class="timer-number"></div>
-                                    <div class="timer-text">SECOND</div>
-
-                                    <div class="progress medium  active">
-                                        <div id="second-bar" class="progress-bar bk-red"></div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ./Counter -->
+        <div class="table_of_contents_item floating_element">
+          <a href="#about">About</a>
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#changes">Changes</a>
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#scope">Scope</a>
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#files">Config files</a>
+        </div>
+      </div>
+-->
+      <div class="content_section floating_element">
 
 
-                    </div>
-                </div>
-            </div>
-			
-			
-			
-			
-               
-            </div>
-            <!--./row-->
-        </section>
-        <!-- END HOME SECION -->
-        
-        <!-- SUBSCRIBE SECION -->
-        <section id="subscribe-section">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    
-                    <h1 class="center">SUBSCRIBE <i class="fa fa-flask"></i> ME NOW</h2>
-                    <div class="divider-two margin-botom-50"></div>
-                    <!-- ./Headings -->
-                    <p class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12 center">
-                        你可以在这里输入你的邮箱来订阅我的博客。<br>
-						（此订阅功能正在开发中，暂时无法使用。）
-						<br>
-						Waiting....                    
-                    </p>
-                    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12 center">
-                        <p class="set-sb ">
+        <div class="section_header section_header_red">
+          <div id="about"></div>
+          It works!
+        </div>
+        <div class="content_section_text">
+          <p>
+                This is the default welcome page used to test the correct 
+                operation of the Apache2 server after installation on Ubuntu systems.
+                It is based on the equivalent page on Debian, from which the Ubuntu Apache
+                packaging is derived.
+                If you can read this page, it means that the Apache HTTP server installed at
+                this site is working properly. You should <b>replace this file</b> (located at
+                <tt>/var/www/html/index.html</tt>) before continuing to operate your HTTP server.
+          </p>
 
-                            <input class="form-control font-30 input-set" type="text" placeholder="Enter Your Email">
-                            <br />
-                            <input type="button" onclick=alert("Waiting ...") class="btn btn-success font-30" value="SUBSCRIBE NOW"  />
-                        </p>
-                        <p>
-                            <strong>Subscribe:</strong>
-							<br>More Internet Technologies Informations.
-							<br>More Studies About OS.
-							<br>Some Evalations About VideoGames And Films.
-							
-						</p>
-                    </div>
-                </div>
-            </div>
-            <!--./row-->
-        </section>
-        <!-- END SUBSCRIBE SECION -->
-        <!-- FOOTER SECION -->
-        <section id="footer">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    &copy; hyoukana.github.io 2016/06 | Display on human–computer interaction class
-                </div>
-            </div>
-            <!--./row-->
-        </section>
-        <!--END FOOTER SECION -->
+
+          <p>
+                If you are a normal user of this web site and don't know what this page is
+                about, this probably means that the site is currently unavailable due to
+                maintenance.
+                If the problem persists, please contact the site's administrator.
+          </p>
+
+        </div>
+        <div class="section_header">
+          <div id="changes"></div>
+                Configuration Overview
+        </div>
+        <div class="content_section_text">
+          <p>
+                Ubuntu's Apache2 default configuration is different from the
+                upstream default configuration, and split into several files optimized for
+                interaction with Ubuntu tools. The configuration system is
+                <b>fully documented in
+                /usr/share/doc/apache2/README.Debian.gz</b>. Refer to this for the full
+                documentation. Documentation for the web server itself can be
+                found by accessing the <a href="/manual">manual</a> if the <tt>apache2-doc</tt>
+                package was installed on this server.
+
+          </p>
+          <p>
+                The configuration layout for an Apache2 web server installation on Ubuntu systems is as follows:
+          </p>
+          <pre>
+/etc/apache2/
+|-- apache2.conf
+|       `--  ports.conf
+|-- mods-enabled
+|       |-- *.load
+|       `-- *.conf
+|-- conf-enabled
+|       `-- *.conf
+|-- sites-enabled
+|       `-- *.conf
+          </pre>
+          <ul>
+                        <li>
+                           <tt>apache2.conf</tt> is the main configuration
+                           file. It puts the pieces together by including all remaining configuration
+                           files when starting up the web server.
+                        </li>
+
+                        <li>
+                           <tt>ports.conf</tt> is always included from the
+                           main configuration file. It is used to determine the listening ports for
+                           incoming connections, and this file can be customized anytime.
+                        </li>
+
+                        <li>
+                           Configuration files in the <tt>mods-enabled/</tt>,
+                           <tt>conf-enabled/</tt> and <tt>sites-enabled/</tt> directories contain
+                           particular configuration snippets which manage modules, global configuration
+                           fragments, or virtual host configurations, respectively.
+                        </li>
+
+                        <li>
+                           They are activated by symlinking available
+                           configuration files from their respective
+                           *-available/ counterparts. These should be managed
+                           by using our helpers
+                           <tt>
+                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2enmod">a2enmod</a>,
+                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2dismod">a2dismod</a>,
+                           </tt>
+                           <tt>
+                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2ensite">a2ensite</a>,
+                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2dissite">a2dissite</a>,
+                            </tt>
+                                and
+                           <tt>
+                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2enconf">a2enconf</a>,
+                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2disconf">a2disconf</a>
+                           </tt>. See their respective man pages for detailed information.
+                        </li>
+
+                        <li>
+                           The binary is called apache2. Due to the use of
+                           environment variables, in the default configuration, apache2 needs to be
+                           started/stopped with <tt>/etc/init.d/apache2</tt> or <tt>apache2ctl</tt>.
+                           <b>Calling <tt>/usr/bin/apache2</tt> directly will not work</b> with the
+                           default configuration.
+                        </li>
+          </ul>
+        </div>
+
+        <div class="section_header">
+            <div id="docroot"></div>
+                Document Roots
+        </div>
+
+        <div class="content_section_text">
+            <p>
+                By default, Ubuntu does not allow access through the web browser to
+                <em>any</em> file apart of those located in <tt>/var/www</tt>,
+                <a href="http://httpd.apache.org/docs/2.4/mod/mod_userdir.html">public_html</a>
+                directories (when enabled) and <tt>/usr/share</tt> (for web
+                applications). If your site is using a web document root
+                located elsewhere (such as in <tt>/srv</tt>) you may need to whitelist your
+                document root directory in <tt>/etc/apache2/apache2.conf</tt>.
+            </p>
+            <p>
+                The default Ubuntu document root is <tt>/var/www/html</tt>. You
+                can make your own virtual hosts under /var/www. This is different
+                to previous releases which provides better security out of the box.
+            </p>
+        </div>
+
+        <div class="section_header">
+          <div id="bugs"></div>
+                Reporting Problems
+        </div>
+        <div class="content_section_text">
+          <p>
+                Please use the <tt>ubuntu-bug</tt> tool to report bugs in the
+                Apache2 package with Ubuntu. However, check <a
+                href="https://bugs.launchpad.net/ubuntu/+source/apache2">existing
+                bug reports</a> before reporting a new bug.
+          </p>
+          <p>
+                Please report bugs specific to modules (such as PHP and others)
+                to respective packages, not to the web server itself.
+          </p>
+        </div>
+
+
+
+
+      </div>
     </div>
-    <!-- END MAIN CONTAINER -->
-    <!--REQUIRED SCRIPTS FILES-->  <!--SCRIPTS AT END SO PAGE WILL TAKE LESS TIME TO LOAD-->
-    <!--REQUIRED CORE JQUERY SCRIPTS FILE--> 
-    <script src="assets/plugins/jquery.min.js"></script>
-     <!--REQUIRED BOOTSTRAP SCRIPTS FILE-->
-    <script src="assets/plugins/bootstrap/bootstrap.js"></script>
-   <!--REQUIRED SCRIPT FILES FOR JQUERY COUNTDOWN-->
-    <script src="assets/plugins/countdown/jquery.countdown.js"></script>
-    <script src="assets/js/countdown.js"></script>
-     <!--REQUIRED SCRIPT FOR SCROLLING MENU LINKS--> 
-     <script src="assets/plugins/jquery.easing.1.3.js"></script>
-        <!--REQUIRED CUSTOM SCRIPT FILE-->    
-    <script src="assets/js/custom-color.js"></script>
-      <!--END REQUIRED SCRIPTS FILES-->
-</body>
-
-
+    <div class="validator">
+    <p>
+      <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+    </p>
+    </div>
+  </body>
 </html>
+
